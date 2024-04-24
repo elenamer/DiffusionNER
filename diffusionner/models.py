@@ -374,7 +374,7 @@ class DiffusionNER(PreTrainedModel):
         self.span_renewal = span_renewal
         self.step_ensemble = step_ensemble
 
-        self.register_buffer('betas', betas)
+        self.register_buffer('bettas', betas)
         self.register_buffer('alphas_cumprod', alphas_cumprod)
         self.register_buffer('alphas_cumprod_prev', alphas_cumprod_prev)
 
